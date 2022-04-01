@@ -1,0 +1,212 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/destinataire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/bluef"
+            android:text="@string/destinataire"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titre1"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/bluef"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerdestinataire"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/bluef"
+            android:text="@string/nom_complet"
+            />
+
+        <EditText
+            android:id="@+id/nomDestinataire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="@string/nom_complethint"
+            />
+
+        <TextView
+            android:id="@+id/telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/bluef"
+            android:text="@string/telephone"
+            />
+
+        <EditText
+            android:id="@+id/telephoneDestinataire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="@string/telephonehint"
+            android:inputType="phone"
+            />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/bluef"
+            android:layout_marginLeft="20dp"
+            android:text="@string/email"
+            />
+
+        <EditText
+            android:id="@+id/emailDestinataire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            />
+
+        <TextView
+            android:id="@+id/pays1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pays1"
+            android:textSize="20sp"
+            android:textColor="@color/bluef"
+            android:layout_marginLeft="20dp"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerpays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/ville1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/bluef"
+            android:layout_marginLeft="20dp"
+            android:text="@string/ville1"
+            />
+
+        <EditText
+            android:id="@+id/villeDestinataire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="@string/villehint"
+            />
+
+        <TextView
+            android:id="@+id/adresse1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/bluef"
+            android:text="@string/adresse"
+            />
+
+        <EditText
+            android:id="@+id/adresseDestinataire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/adressehint"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/codepostal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/bluef"
+            android:text="@string/codepostal"
+            />
+
+        <EditText
+            android:id="@+id/codePostalDestinataire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="@string/codepostalhint"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/precedent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="30dp"
+                android:text="@string/precedent" />
+
+            <Button
+                android:id="@+id/suivant1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="@string/suivant1" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,161 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/infoscolis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/bluef"
+            android:text="@string/infoscolis"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/bluef"
+            android:text="@string/descriptioncolis"
+            />
+
+        <EditText
+            android:id="@+id/descriptionColis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="8"
+            android:minLines="6"
+            android:maxLines="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:hint="@string/description"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:id="@+id/poids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/bluef"
+            android:text="@string/poids"
+            />
+
+        <EditText
+            android:id="@+id/poidsColis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/poids"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="numberDecimal"
+            />
+
+        <TextView
+            android:id="@+id/longueur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/bluef"
+            android:layout_marginLeft="20dp"
+            android:text="@string/longueur"
+            />
+
+        <EditText
+            android:id="@+id/longueurColis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:hint="@string/longueur"
+            android:inputType="numberDecimal"
+            />
+
+        <TextView
+            android:id="@+id/largeur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/bluef"
+            android:layout_marginLeft="20dp"
+            android:text="@string/largeur"
+            />
+
+        <EditText
+            android:id="@+id/largeurColis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/largeur"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="numberDecimal"
+            />
+
+        <TextView
+            android:id="@+id/hauteur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hauteur"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="@color/bluef"
+            />
+
+        <EditText
+            android:id="@+id/hauteurColis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hauteur"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:inputType="numberDecimal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/envoyer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:background="@drawable/button"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="30dp"
+                android:text="@string/envoyer" />
+
+            <Button
+                android:id="@+id/annuler1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:text="@string/annuler" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
